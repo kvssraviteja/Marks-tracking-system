@@ -1,0 +1,31 @@
+<html>
+<title>Welcome to faculty home page</title>
+<head>
+<a href="faculty_home.html">Go Back..</a>
+<form action="faculty_logout.php" method="post" align="right"> <input type="submit" name="logout" value="logout"></form><br><br><br>
+<label><center>Enter the following details:</center></label><br><br><br><br>
+<style>
+ label{
+    color:green;
+       }
+body
+	{
+	background-color:linen;
+	}
+</style></head>
+<body><center>
+<form action="faculty_home.php" method="post">
+  <label>Regulations:</label>
+  <input type="textbox" name="reg" id="reg" value="r"><br><br>
+  <label>Year:</label>
+  <input type="textbox" name="year" id="year"><br><br>
+  <label>Semester:</label>
+  <input type="textbox" name="sem" id="sem"><br><br>
+  <label>Subject:</label>
+  <input type="textbox" name="sub" id="sub"><br><br>
+  <input type="submit" name="get_sub_marks" value="get marks">
+  
+  </center>
+  </form>
+</body>
+</html>

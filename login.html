@@ -1,0 +1,144 @@
+<html>
+<head>
+<div align="center">
+<title> FACULTY LOGIN </title>
+<h2>DEPARETMENT OF CSE</h2>
+</div>
+
+
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+background-image: url(1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 100%;
+color: black;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+
+.login {
+margin: 50px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: #5a5656;
+font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+background-color: #5a5656;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+color: #f4f4f4;
+display: block;
+font-size: 12px;
+height: 50px;
+line-height: 50px;
+margin: 30px 125px;
+text-align: center;
+text-transform: uppercase;
+width: 50px;
+}
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+  
+      
+      function validate()
+      {
+      
+         if( document.myform.name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myform.name.focus() ;
+            return false;
+         }
+         if( document.myform.pwd.value == "" )
+         {
+			 alert( "Please provide your password" );
+			document.myform.name.focus() ;
+           
+            return false;
+         }
+         return( true );
+      }
+ </script>
+
+ <form method="post" name="myform" onsubmit="return validate()" action="php/faculty_login.php">
+<div align="center" >
+<fieldset>
+<label> USERNAME: </label>
+<input type="text" name="name" size="30" name="email" /><br></br>
+<label> PASSWORD: </label>
+<input type="password" name="pwd" size="30" /><br>
+<input type="submit" class="login" name="submit" value="submit" />
+<object width="900" height="500"" id="excel" data="Issues Identified.xslx" classid= "cslid:0002E55a-0000-0000-C000-000000000046" VIEWASTEXT>
+<param name="DisplayTitleBar" value=true/>
+<param name="DataType" value=true/>
+<param name="AutoFit" value="0"/>
+<param name="DisplayColHeaders" value="1"/>
+<param name="DisplayGridLines" value="1"/>
+<param name="DisplayHorizontalScrollBar" value="1"/>
+<param name="RowHeaders" value="1"/>
+<param name="DisplayTitleBar" value="1"/>
+<param name="DisplayToolBar" value="1"/>
+<param name="DisplayVerticalScrollBar" value="1"/>
+<param name="EnableAutoCalculate" value="0"/>
+<param name="EnableEvents" value="0"/>
+<param name="MoveAfterReturn" value="1"/>
+<param name="MoveAfterReturnDirection" value="0"/>
+<param name="MoveAfterRightToLeft" value="0"/>
+</object>
+</fieldset>
+</div>
+</form>
+
+</body>
+</html>
